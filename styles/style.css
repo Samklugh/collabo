@@ -17,9 +17,23 @@
 }
 
 body{
-    background: linear-gradient(to right, #133A05,#133109, #0F2308, #0E1A0A, #0E140C,#101010, #111111, #141414, #151515, #161616, #171717, #181818, #191919);
-    /* background: radial-gradient(circle at left, #4CFC0F 0%, #000000 44%); */
-    /* background: linear-gradient(90deg, #0bff3c 0%, #020202 40%, #000000 100%); */
+    background: 
+        radial-gradient(
+            circle at 15% 20%, 
+            rgba(196,154,108,0.18), 
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 85% 80%, 
+            rgba(196,154,108,0.12), 
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            #0B0B0B 0%,
+            #111111 40%,
+            #1A1A1A 100%
+        );
 }
 
 
@@ -33,13 +47,14 @@ header{
     justify-content: space-around;
     align-items: center;
     padding: 20px;
-    color: #4CFC0F;
+    color: #A47149;
     background-color: #000000;
     width: 100%;
 }
 
 header .left{
     display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -51,24 +66,29 @@ header .mid{
 header .right{
     display: flex;
     gap: 1rem;
-    border: 1px solid #4CFC0F;
+    border: 1px solid #A47149;   /* Bronze */
     padding: 15px 40px;
     border-radius: 1.5rem;
 }
 
+header .left img{
+    height: 50px;
+    width: auto;
+}
+
 header a{
-    color: #4CFC0F;
+    color: #D9D9D9;        /* Soft silver */
     text-decoration: none;
     font-weight: 200;
     font-size: 1rem;
 }
 
 header a:visited{
-    color: white;
+    color: #D9D9D9;   /* Same as default link */
 }
 
 header a:hover{
-    color: white;
+    color: #A47149;      /* Bronze hover */
     transition: 0.3s ease-in-out;
 }
 
@@ -78,7 +98,7 @@ header .right a:hover{
 
 
 header .right:hover{
-    background-color: #4CFC0F;
+    background-color: #F2C79E;   /* Warm soft fill */
     /* transition: 0.1s ease-in-out; */
 }
 
@@ -100,7 +120,7 @@ footer{
 }
 
 footer a{
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
     text-decoration: none;
     font-weight: 200;
     font-size: 1rem;
@@ -111,7 +131,7 @@ footer a{
 }
 
 .left-1 .footer-address{
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze hover */
     font-weight: 200;
     font-size: 0.8rem;
     width: 60%;
@@ -125,7 +145,7 @@ footer a{
 }
 
 .socials-right{
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
     font-size: 0.8rem;
     margin-top: 0.9rem;
     margin-right: 11rem;
@@ -194,19 +214,19 @@ i{
 
 .contact-top .right{
     width: 40%;
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
     font-size: 1rem;
     line-height: 1.5;
 }
 
 
 .contact-top .right{
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
     font-size: 1rem;    
 }
 
 .contact-top .left{
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
     font-size: 4rem;
 }
 
@@ -220,7 +240,7 @@ i{
 .contact-name, .contact-lastname, .contact-phone, .contact-email, .contact-message{
     display: flex;
     flex-direction: column;
-    color: #4CFC0F;
+    color: #A47149;      /* Bronze */
 }
 
 .form input, .form textarea{
@@ -228,8 +248,8 @@ i{
     margin-bottom: 1rem;
     margin-top: 0.5rem;
     background-color: transparent;
-    border: 1px solid #4CFC0F;
-    color: #4CFC0F;
+    border: 1px solid #A47149;  /* Bronze */
+    color: #F2C79E;   /* bright coloour input text */
     border-radius: 1.3rem;
     width: 55%;
 }
@@ -237,8 +257,8 @@ i{
 .form button{
     padding: 0.9rem;
     background-color: transparent;
-    color: #4CFC0F;
-    border: 1px solid #4CFC0F;
+    color: #F2C79E;
+    border: 1px solid #A47149;  /* Bronze */
     border-radius: 1.3rem;
     font-weight: 500;
     font-size: 1rem;
@@ -246,7 +266,7 @@ i{
 }
 
 .form button:hover{
-    background-color: #4CFC0F;
+    background-color: #F2C79E;
     color: black;
     transition: 0.3s ease-in-out;
     cursor: pointer;
@@ -276,13 +296,13 @@ i{
 .about-left{
     display: flex;
     flex-direction: column;
-    color: #4CFC0F;
+    color: #A47149;  /* Bronze */
 }
 
 .about-left a{
     text-decoration: none;
-    color: #4CFC0F;
-    border: 1px solid #4CFC0F;
+    color: #A47149;  /* Bronze */
+    border: 1px solid #A47149;  /* Bronze */
     padding: 1rem 1.5rem;
     border-radius: 1.5rem;
     width: 35%;
@@ -291,7 +311,7 @@ i{
 }
 
 .about-left a:hover{
-    background-color: #4CFC0F;
+    background-color: #A47149;  /* Bronze */
     color: black;
     transition: 0.3s ease-in-out;
 }
@@ -311,7 +331,7 @@ i{
 
 .about-right img{
     width: 40rem;
-    height: 140%;
+    height: auto;   /* important */
 }
 
 
@@ -322,7 +342,7 @@ i{
 
 .main-services{
     margin: 5rem 8rem;
-    color: #4CFC0F;
+    color: #A47149;  /* Bronze */
 }
 
 .services, .mixing{
@@ -336,7 +356,7 @@ i{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: radial-gradient(circle at center, #39ff14 1px, transparent 1px);
+  background: radial-gradient(circle at center, #A47149 1px, transparent 1px);
   background-size: 6px 6px;
   filter: drop-shadow(0 0 10px #39ff14);
   border-bottom: 1px solid #39ff14;
