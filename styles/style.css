@@ -258,6 +258,43 @@ i{
     margin: 6rem 0;
 }
 
+
+
+/* ------------------------------------------------------------- */
+/*                        ABOUT MAIN CSS DESIGN  */
+/* -------------------------------------------------------------- */
+
+.about-home{
+    margin: 5rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    margin-bottom: 10rem;
+
+}    
+
+.about-left{
+    display: flex;
+    flex-direction: column;
+    color: #4CFC0F;
+}
+
+.about-left a{
+    text-decoration: none;
+    color: #4CFC0F;
+    border: 1px solid #4CFC0F;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1.5rem;
+    width: 30%;
+}
+
+.about-right img{
+    width: 40rem;
+    height: 140%;
+}
+
+
+
 /* ------------------------------------------------------------- */
 /*                        SERVICES MAIN CSS DESIGN  */
 /* -------------------------------------------------------------- */
