@@ -190,7 +190,50 @@ i{
 /* -------------------------------------------------------------- */
 
 .main-home{
+position: relative;
 }
+
+.home{
+    position: absolute;
+    top: 16rem;
+    color: #39ff14;
+    left: 30%;
+    z-index: 1;
+}
+
+.home p:first-child{
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+.expert{
+    font-size: 1rem;
+    font-weight: 200;
+    margin-left: 8rem;
+    margin-top: 1rem;
+}
+
+.home a{
+    margin-top: 2rem;
+    border: 1px solid #39ff14;
+    padding: 1.2rem 3rem;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    text-align: center;
+    color: #39ff14;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+    margin: 2rem 13rem;
+}
+
+.home a:hover{
+    background-color: #39ff14;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+/* note: the profile section is in the about page also */
 
 
 
@@ -284,7 +327,7 @@ i{
 /*                        ABOUT MAIN CSS DESIGN  */
 /* -------------------------------------------------------------- */
 
-.about-home{
+.about-home, .profile-home{
     margin: 5rem 8rem;
     display: flex;
     justify-content: space-between;
@@ -293,13 +336,13 @@ i{
 
 }    
 
-.about-left{
+.about-left, .profile-left{
     display: flex;
     flex-direction: column;
     color: #A47149;  /* Bronze */
 }
 
-.about-left a{
+.about-left a, .profile-left a{
     text-decoration: none;
     color: #A47149;  /* Bronze */
     border: 1px solid #A47149;  /* Bronze */
@@ -310,26 +353,26 @@ i{
     margin-top: 3rem;
 }
 
-.about-left a:hover{
+.about-left a:hover, .profile-left a:hover{
     background-color: #A47149;  /* Bronze */
     color: black;
     transition: 0.3s ease-in-out;
 }
 
-.about-left h1{
+.about-left h1, .profile-left h1{
     font-size: 4rem;
     font-weight: 200;
     margin-bottom: 2rem;
 }
 
-.about-left p{
+.about-left p, .profile-left p{
     font-size: 0.9rem;
     line-height: 1.3;
     width: 80%;
     margin-top: 1rem;
 }
 
-.about-right img{
+.about-right img, .profile-right img{
     width: 40rem;
     height: auto;   /* important */
 }
