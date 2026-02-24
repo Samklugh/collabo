@@ -320,12 +320,37 @@ i{
 /*                        SERVICES MAIN CSS DESIGN  */
 /* -------------------------------------------------------------- */
 
+.main-services{
+    margin: 5rem 8rem;
+    color: #4CFC0F;
+}
 
-/* .circle { */
-  /* width: 90px; */
-  /* height: 90px; */
-  /* border-radius: 50%; */
-  /* background: radial-gradient(circle at center, #39ff14 1px, transparent 1px); */
-  /* background-size: 6px 6px; */
-  /* filter: drop-shadow(0 0 10px #39ff14); */
-/* } */
+
+
+.circle-1 {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, #39ff14 1px, transparent 1px);
+  background-size: 6px 6px;
+  filter: drop-shadow(0 0 10px #39ff14);
+}
+
+.music-production{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 5rem;
+    justify-content: space-evenly;
+}
+
+.music-production .left{
+    width: 30%;
+}
+
+.music-production .right{
+    width: 20%;
+}
+
+.music-production .mid{
+    width: 40%;
+}
