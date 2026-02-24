@@ -269,7 +269,7 @@ i{
     display: flex;
     justify-content: space-between;
     gap: 4rem;
-    margin-bottom: 10rem;
+    margin-bottom: 12rem;
 
 }    
 
@@ -283,9 +283,30 @@ i{
     text-decoration: none;
     color: #4CFC0F;
     border: 1px solid #4CFC0F;
-    padding: 0.5rem 1.5rem;
+    padding: 1rem 1.5rem;
     border-radius: 1.5rem;
-    width: 30%;
+    width: 35%;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.about-left a:hover{
+    background-color: #4CFC0F;
+    color: black;
+    transition: 0.3s ease-in-out;
+}
+
+.about-left h1{
+    font-size: 4rem;
+    font-weight: 200;
+    margin-bottom: 2rem;
+}
+
+.about-left p{
+    font-size: 0.9rem;
+    line-height: 1.3;
+    width: 80%;
+    margin-top: 1rem;
 }
 
 .about-right img{
